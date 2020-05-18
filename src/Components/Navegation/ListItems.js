@@ -2,11 +2,10 @@ import React from 'react';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import DashboardIcon from '@material-ui/icons/Dashboard';
-import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
+import Home from '@material-ui/icons/Home';
+import LocalDining from '@material-ui/icons/LocalDining';
 import PeopleIcon from '@material-ui/icons/People';
-import BarChartIcon from '@material-ui/icons/BarChart';
-import LayersIcon from '@material-ui/icons/Layers';
+import  LocalShippingOutlined from '@material-ui/icons/LocalShippingOutlined';
 
 import Link from './Link';
 
@@ -14,33 +13,27 @@ export const mainListItems = (
   <div>
     <ListItem button component={Link} naked href="/">
       <ListItemIcon>
-        <DashboardIcon />
+        <Home />
       </ListItemIcon>
-      <ListItemText primary="Dashboard" />
-    </ListItem>
-    <ListItem button>
-      <ListItemIcon>
-        <ShoppingCartIcon />
-      </ListItemIcon>
-      <ListItemText primary="Orders" />
+      <ListItemText primary="Inicio" />
     </ListItem>
     <ListItem button component={Link} naked href="/customer">
       <ListItemIcon>
         <PeopleIcon />
       </ListItemIcon>
-      <ListItemText primary="Customers" />
+      <ListItemText primary="Clientes" />
     </ListItem>
-    <ListItem button>
+    <ListItem button component={Link} naked href="/seller">
       <ListItemIcon>
-        <BarChartIcon />
+        <LocalShippingOutlined />
       </ListItemIcon>
-      <ListItemText primary="Reports" />
+      <ListItemText primary="Vendedores" />
     </ListItem>
-    <ListItem button>
+    <ListItem button component={Link} naked href="/product">
       <ListItemIcon>
-        <LayersIcon />
+        <LocalDining />
       </ListItemIcon>
-      <ListItemText primary="Integrations" />
+      <ListItemText primary="Productos" />
     </ListItem>
   </div>
 );

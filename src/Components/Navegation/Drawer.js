@@ -6,6 +6,7 @@ import IconButton from '@material-ui/core/IconButton';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import { useStyles } from './styles';
 import { mainListItems } from './ListItems';
+import Logo from './../../../helpers/Files/Logo.jpg'
 
 const Desktop = ({open , handleDrawerClose}) => {
   const classes = useStyles();
@@ -19,6 +20,7 @@ const Desktop = ({open , handleDrawerClose}) => {
       open={open}
     >
       <div className={classes.toolbarIcon}>
+        <img src={Logo} alt='logo' className={classes.img}/>
         <IconButton onClick={handleDrawerClose}>
           <ChevronLeftIcon />
         </IconButton>

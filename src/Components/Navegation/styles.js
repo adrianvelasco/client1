@@ -19,6 +19,7 @@ const drawerWidth = 240;
   },
   appBar: {
     zIndex: theme.zIndex.drawer + 1,
+    backgroundColor: '#ffb74d',
     transition: theme.transitions.create(['width', 'margin'], {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
@@ -26,6 +27,7 @@ const drawerWidth = 240;
   },
   appBarShift: {
     marginLeft: drawerWidth,
+    backgroundColor: '#ffb74d',
     width: `calc(100% - ${drawerWidth}px)`,
     transition: theme.transitions.create(['width', 'margin'], {
       easing: theme.transitions.easing.sharp,
@@ -80,4 +82,11 @@ const drawerWidth = 240;
   fixedHeight: {
     height: 240,
   },
+  img:{
+    height:160,
+    width:150,
+    marginTop: -55,
+    marginBottom: -43,
+    overflow: 'hidden'
+  }
 }));

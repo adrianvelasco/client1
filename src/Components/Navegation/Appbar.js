@@ -1,9 +1,8 @@
 import  React from 'react';
 import clsx from 'clsx';
-import { AppBar, Toolbar, IconButton, Typography, Badge } from '@material-ui/core';
+import { AppBar, Toolbar, IconButton } from '@material-ui/core';
 import { useStyles } from './styles';
 import MenuIcon from '@material-ui/icons/Menu';
-import NotificationsIcon from '@material-ui/icons/Notifications';
 
 
 const Navbar = ({open, handleDrawerOpen}) => {
@@ -21,14 +20,11 @@ const Navbar = ({open, handleDrawerOpen}) => {
         >
           <MenuIcon />
         </IconButton>
-        <Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>
-          Panificadora Hidalgo
-        </Typography>
-        <IconButton color="inherit">
+        {/* <IconButton color="inherit">
           <Badge badgeContent={4} color="secondary">
             <NotificationsIcon />
           </Badge>
-        </IconButton>
+        </IconButton> */}
       </Toolbar>
     </AppBar>
   )

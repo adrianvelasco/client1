@@ -2,10 +2,10 @@ import React from 'react';
 
 import Navegation from '../src/Components/Navegation';
 
-export default function Index() {
+export default function Seller() {
   return (
     <Navegation>
-      <h1>Hola perras</h1>
+      <h1>Hola perras3</h1>
     </Navegation>
   );
 }
